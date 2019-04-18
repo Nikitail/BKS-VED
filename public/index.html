@@ -132,7 +132,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <div class="uk-child-width-1-2@s uk-grid-medium" uk-grid>
                                 <div>
                                     <masked-input
-											@change="formCheck()"
                                             type="tel"
                                             name="phone"
 											ref="phone"
@@ -145,13 +144,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                     </masked-input>
                                 </div>
                                 <div>
-                                    <input @change="formCheck()" ref="" type="email" name="email" v-model="form.email" class="uk-input uk-form-large" placeholder="Электронный адрес" v-validate="{required: true, email: true}" :class="{'uk-form-danger': errors.has('email')}">
+                                    <input ref="" type="email" name="email" v-model="form.email" class="uk-input uk-form-large" placeholder="Электронный адрес" v-validate="{required: true, email: true}" :class="{'uk-form-danger': errors.has('email')}">
                                 </div>
                             </div>
                         </div>
                         <div>
                             <masked-input
-									@change="formCheck()"
                                     type="tel"
                                     name="ogrn"
 									ref="ogrn"
