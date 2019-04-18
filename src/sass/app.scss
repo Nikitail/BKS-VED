@@ -1,0 +1,35 @@
+@import "uikit-variables.scss";
+@import "~uikit/src/scss/variables.scss";
+@import "~uikit/src/scss/mixins.scss";
+@import "uikit-mixins.scss";
+@import "~uikit/src/scss/uikit.scss";
+
+.tm-section-intro {
+  background: url(/images/BKS_Car.svg) 100% 100% no-repeat;
+  @media (max-width: $breakpoint-small-max) {
+    background: none;
+  }
+}
+
+.tm-checkbox-label {
+  position: relative;
+  display: block;
+  padding-left: $global-medium-gutter;
+  cursor: pointer;
+  font-size: $global-medium-font-size;
+  & > input {
+    position: absolute;
+    top: 2px;
+    left: 0;
+  }
+}
+
+.tm-footer {
+  font-size: 0.75rem;
+}
+.tm-boolits-font{
+	font-size: 16px;
+	@media (max-width: $breakpoint-small-max) {
+		font-size: 15px;
+	}
+}

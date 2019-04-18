@@ -1,0 +1,53 @@
+@mixin hook-base-body() {
+  @media (max-width: $breakpoint-medium-max) {
+    font-size: 12px;
+  }
+  @media (max-width: $breakpoint-xsmall-max) {
+    font-size: 10px;
+  }
+}
+
+@mixin hook-button() {
+  border-radius: $border-rounded-border-radius;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+@mixin hook-button-large() {
+  @media (max-width: $breakpoint-xsmall-max) {
+    line-height: 50px;
+    font-size: 2rem;
+  }
+}
+
+@mixin hook-form() {
+  box-shadow: inset 0 0 0 $global-border-width $global-border;
+  border-radius: $border-rounded-border-radius - 2px;
+}
+
+@mixin hook-form-focus() {
+  box-shadow: inset 0 0 0 $global-border-width + 1px $global-border;
+}
+
+@mixin hook-form-radio() {
+  box-shadow: inset 0 0 0 $global-border-width $global-primary-background;
+  border-radius: $border-rounded-border-radius - 2px;
+}
+
+@mixin hook-form-radio-checked() {
+  box-shadow: none;
+}
+
+@mixin hook-form-danger() {
+  box-shadow: inset 0 0 0 $global-border-width + 1px $global-danger-background;
+}
+
+@mixin hook-modal-dialog() {
+  border-radius: $border-rounded-border-radius;
+}
+
+@mixin hook-modal-footer() {
+  text-align: center !important;
+  display: flex;
+  justify-content: center;
+}
